@@ -1,0 +1,647 @@
+/* Index for CSS*/
+/*1. Common styling
+- Fonts
+- Body, Header and sectionwrapper
+- Text and images
+- Footer
+- Header navigation with dropdown menu and logo
+
+2. Individual page styling
+- Index/front page
+
+- Projects overview
+- Projects - pages
+    - Responsive Styletile v2
+    - Assetlist
+    - Animationsopgaven
+    - Privat Snak
+    - Webprototype
+    - Native App
+- Eksempler
+    - Burgermenu - CSS and Javascript
+- CV/About
+
+- Designs
+- Photography
+
+3.Layout / Grid
+- Design
+- Photography
+
+4. Eksempel styling
+- Burgermenu - CSS and JavaScript
+
+5. Media Query
+
+*/
+
+
+
+/*1. Common styling*/
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Body, Header and sectionwrapper styling */
+
+.header_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.header_img {
+    max-width: 10%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2a4d69;
+    font-size: 17px;
+    line-height: 1.6;
+
+}
+
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e7eff6;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #2a4d69;
+
+}
+
+.container {
+    width: 75%;
+    background-color: #fbfbff;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #2a4d69;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*Text and images */
+
+p,
+ul,
+b {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    color: black;
+
+}
+
+h5,
+h6 {
+    color: #4279a3;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+
+}
+
+
+
+a h5 {
+    text-decoration: underline;
+    color: #4279a3;
+    margin: 2px;
+    padding: 0px;
+    display: inline-block;
+
+}
+
+.content a:hover {
+    color: #1b2031;
+
+}
+
+
+.overskrift {
+    display: flex;
+    flex-wrap: wrap;
+    color: #1b2031;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.overskrift img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+
+/*Footer*/
+
+footer {
+    display: block;
+    margin: 10px;
+}
+
+.footer_content {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.some:hover {
+    width: 18px;
+}
+
+.some {
+    width: 15px;
+    padding: 10px;
+}
+
+
+
+
+/* Navigation with dropdown menu and logo*/
+
+
+
+ol {
+    list-style-type: none;
+    overflow: hidden;
+    max-width: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+}
+
+
+li a,
+.dropbutton {
+    display: inline-block;
+    color: #adcbe3;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px;
+    font-weight: 500;
+}
+
+li a:hover,
+.dropdown:hover .dropbutton {
+    color: #1b2031;
+    border-radius: 5px;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #e7eff6;
+    z-index: 1;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.dropdown_content a {
+    color: #2a4d69;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown_content a:hover {
+    background-color: #adcbe3;
+
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+
+}
+
+/* 2. Individual page styling  */
+
+/*Index / front page */
+
+.container_fp {
+    width: 65%;
+    background-color: #fbfbff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #2a4d69;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.content_fp {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.content_fp a {
+    text-decoration: none;
+    color: #707991;
+
+}
+
+.content_fp a:hover {
+    color: #1b2031;
+
+}
+
+/* projects - overview*/
+
+.content_row {
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.content_row figure img {
+    min-width: 300px;
+    width: 100%;
+    border: solid 5px #cfd8f0;
+    border-radius: 5px;
+}
+
+.content_row figcaption {
+    text-align: center;
+}
+
+.content_row a {
+    text-decoration: none;
+    color: #707991;
+
+}
+
+.content_row a:hover {
+    color: #1b2031;
+
+}
+
+
+
+
+/*projects - pages */
+
+/* Responsive Styletile v2*/
+
+/* Assetlist*/
+
+
+.assetlist_image {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.assetlist_image img {
+    width: 15rem;
+    border: solid 5px #cfd8f0;
+    border-radius: 5px;
+    margin: 20px;
+
+}
+
+/*Animations opgave */
+
+
+/* Privat Snak */
+
+.overskrift_img_privatsnak {
+    border: solid #e9aa77 10px;
+    border-left-width: 70px;
+    border-right-width: 70px;
+    background-color: #e9aa77;
+}
+
+/* Redesign */
+
+.overskrift_img_daf {
+    background-color: #594e45;
+    border: solid #594e45 15px;
+    align-self: center;
+}
+
+.daf_video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.redesign_image {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.redesign_image img {
+    width: 15rem;
+    border: solid 5px #cfd8f0;
+    border-radius: 5px;
+    margin: 20px;
+
+}
+
+
+/* Webprototype */
+
+
+#overskrift_img_web {
+    background-color: #EA5045;
+    background-size: auto;
+    border: solid #EA5045 20px;
+    align-self: center;
+    border-left-width: 70px;
+    border-right-width: 70px;
+}
+
+.webprototype_image {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.webprototype_image img {
+    width: 15rem;
+    border: solid 5px #cfd8f0;
+    border-radius: 5px;
+    margin: 20px;
+
+}
+
+
+
+
+/* Native App */
+
+
+.nativeapp_img {
+    background-color: #3f3140;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.nativeapp_udtalelser {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.nativeapp_udtalelser p {
+    font-style: italic;
+    width: 15rem;
+    border: solid 5px #cfd8f0;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+/*CV styling */
+
+.container_cv {
+    width: 75%;
+    background-color: #fbfbff;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #2a4d69;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content_top_cv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.top_cv_img {
+    max-width: 25%;
+    margin: 10px;
+}
+
+.text_top_cv {
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 30px;
+
+}
+
+.content_bottom_cv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+
+.bottom_cv_img {
+    width: 20%;
+    margin: 10px;
+
+}
+
+
+.text_bottom_cv {
+    max-width: 70%;
+}
+
+.cv_media {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* Photography */
+
+.content_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.content_gallery img {
+    margin-left: 10px;
+    max-width: 25vw;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.column img {
+    margin: 10px;
+}
+
+.row {
+    margin: 10px;
+}
+
+
+
+/*4. Eksempel styling */
+/* Burgermenu - CSS and JavaScript */
+
+#eksempel_burgermenu_cssjs {
+
+    height: 50px;
+    width: 30%;
+    background-color: #adcbe3;
+    color: #2a4d69;
+    padding: 10px;
+    margin: 10px;
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+    transform: scale(0);
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#eksempel_knap_cssjs {
+    display: inline-block;
+    width: 100%;
+}
+
+#eksempel_menu_cssjs {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top down;
+    background-color: #adcbe3;
+    overflow: auto;
+    padding: 10px;
+    width: 100%;
+    transform: translateX(-2%);
+}
+
+#eksempel_menu_cssjs a {
+    text-decoration: none;
+    color: #2a4d69;
+}
+
+
+/* Design */
+
+/* Photography */
+
+/* 3. Layout / Grid */
+
+/* Design */
+
+/* Photography */
+
+
+/* 5. Media Query */
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+
+    p,
+    li {
+        font-size: 14px;
+        margin: 0px;
+        padding-bottom: 5px;
+    }
+
+    video {
+        width: 300px;
+
+    }
+
+
+}
+
+
+
+
+/*full window tyæing - brug media query - sæt en max-width så hjemmesidens æstetik ikke ændres på en stor skærm */
